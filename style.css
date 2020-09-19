@@ -1,0 +1,55 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#top{
+  background-image: url("http://static.dnaindia.com/sites/default/files/styles/half/public/2016/08/17/492672-female-foeticide-girl-child.png");
+  background-repeat: no-repeat;
+  height:430px;
+
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+}
+#top::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: .4;
+  z-index: -1;
+}
+#top h1{
+  display: block;
+  width: fit-content;
+  font-size: 4rem;
+  position: relative;
+  color: black;
+  background-color: lightgray;
+  word-spacing: 3px;
+  box-shadow: 5px 5px #888888;
+}
+
+#top .top{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px;
+  justify-content: center;
+}
